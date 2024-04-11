@@ -20,7 +20,7 @@ export class AddUpdateProductComponent implements OnInit {
     id: new FormControl(''),
     image: new FormControl('', [Validators.required]),
     name: new FormControl('', [Validators.required, Validators.minLength(4)]),
-    price: new FormControl(null, [Validators.required, Validators.min(0)]),
+    price: new FormControl('', [Validators.required, Validators.minLength(4)]),
     soldUnits: new FormControl(null, [Validators.required, Validators.min(0)]),
 
   })
@@ -53,7 +53,7 @@ export class AddUpdateProductComponent implements OnInit {
     let { soldUnits, price } = this.form.controls;
 
     if(soldUnits.value) soldUnits.setValue(parseFloat(soldUnits.value));
-    if(price.value) price.setValue(parseFloat(price.value));
+    // if(price.value) price.setValue(parseFloat(price.value));
 
   }
 

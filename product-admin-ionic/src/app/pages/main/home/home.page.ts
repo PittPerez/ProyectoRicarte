@@ -40,7 +40,7 @@ export class HomePage implements OnInit {
 
   //Obtener las ganancias generales
   getProfits() {
-    return this.products.reduce((index, product) => index + product.price * product.soldUnits, 0);
+    return this.products.reduce((index, product) => index + product.soldUnits, 0);
   }
 
   //Obtener los productos
