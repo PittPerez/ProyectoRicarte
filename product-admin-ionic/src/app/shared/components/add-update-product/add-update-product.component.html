@@ -34,8 +34,8 @@
         <!-- ========= PRECIO ========= -->
         <app-custom-input 
         [control]="form.controls.price"
-        type="number"
-        label="precio"
+        type="text"
+        label="Comentario"
         (ionInput)="setNumbreInputs()"
         ></app-custom-input>
   
@@ -48,7 +48,7 @@
         <app-custom-input 
         [control]="form.controls.soldUnits"
         type="number"
-        label="Unidades vendidas"
+        label="Califícanos (1-10)"
         (ionInput)="setNumbreInputs()"
         ></app-custom-input>
   
@@ -59,7 +59,7 @@
 
   
         <ion-button mode="ios" class="ion-margin" type="submit" [disabled]="form.invalid">
-          {{product ? 'Actualizar producto' : 'Agregar producto'}}
+          {{product ? 'Actualizar comentario' : 'Agregar comentario'}}
           <ion-icon slot="end" name="checkmark-circle-outline"></ion-icon>
         </ion-button>
     
