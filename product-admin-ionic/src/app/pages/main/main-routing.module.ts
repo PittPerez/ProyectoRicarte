@@ -17,7 +17,15 @@ const routes: Routes = [
         loadChildren: () => import('./profile/profile.module').then(m => m.ProfilePageModule)
       }
     ]
+  },  {
+    path: 'gallery',
+    loadChildren: () => import('./gallery/gallery.module').then( m => m.GalleryPageModule)
   },
+  {
+    path: 'cake-details',
+    loadChildren: () => import('./cake-details/cake-details.module').then( m => m.CakeDetailsPageModule)
+  },
+
 
 ];
 
