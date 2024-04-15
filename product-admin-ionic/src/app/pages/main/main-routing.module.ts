@@ -29,7 +29,7 @@ const routes: Routes = [
   {
     path: 'cake-details',
     loadChildren: () => import('./cake-details/cake-details.module').then( m => m.CakeDetailsPageModule)
-  },
+  },
 
 
 ];
