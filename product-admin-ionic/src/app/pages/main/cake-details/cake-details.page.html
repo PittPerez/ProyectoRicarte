@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detalle del Producto</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <!-- Mostrar la imagen y la descripción del producto -->
+    <ion-img [src]="product.imgUrl"></ion-img>
+    <ion-card-content>
+      <p>Nombre: {{ product.name}}</p>
+      <p>Precio: {{ product.price}}</p>
+      <p>Descripción: {{ product.description}}</p>
+      
+    </ion-card-content>
+  </ion-card>
+</ion-content>

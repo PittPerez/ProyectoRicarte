@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Galeria</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card-content>
+     <!-- Lista de productos -->
+     <ion-list lines="none">
+      <ion-row>
+        <ion-col size="4" *ngFor="let product of products">
+          <ion-card>
+            <ion-img [src]="product.imgUrl"></ion-img>
+            <ion-card-content>
+              <ion-button expand="block" (click)="openProductModal(product)" class="ion-text-wrap ion-text-center" style="max-width: 100%;">Ver detalles</ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-list>
+    
+  </ion-card-content>
+</ion-content>
