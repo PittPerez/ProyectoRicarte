@@ -19,6 +19,10 @@ const routes: Routes = [
     ]
   },
   {
+    path: 'contacto',
+    loadChildren: () => import('./contacto/contacto.module').then( m => m.ContactoPageModule)
+  },
+  {
     path: 'gallery',
     loadChildren: () => import('./gallery/gallery.module').then( m => m.GalleryPageModule)
   },
