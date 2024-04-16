@@ -9,10 +9,16 @@ import { CakeDetailsPage } from '../cake-details/cake-details.page';
 })
 export class GalleryPage implements OnInit {
   products = [
-    { name: 'Pastel de Chocolate', imgUrl: 'assets/img/pastelchocolate.jpg', price:50, description: 'Delicioso pastel de chocolate.' },
-    { name: 'Pastel de Fresa', imgUrl: 'assets/img/pastelchoconaranja.jpg',price:50, description: 'Jugoso pastel de fresa.' },
-    { name: 'Pastel de Fresa', imgUrl: 'assets/img/pastelfresa.jpg', price:50, description: 'Jugoso pastel de fresa.' },
-    // Agrega más pasteles aquí
+    { name: 'Pastel de Chocolate', imgUrl: 'assets/img/1.jpg', price:50, description: 'Delicioso pastel de chocolate.' },
+    { name: 'Pastel de Fresa', imgUrl: 'assets/img/8.jpg',price:50, description: 'Jugoso pastel de fresa.' },
+    { name: 'Pastel de Fresa', imgUrl: 'assets/img/3.jpg', price:50, description: 'Jugoso pastel de fresa.' },
+    { name: 'Pastel de Chocolate', imgUrl: 'assets/img/10.jpg', price:50, description: 'Delicioso pastel de chocolate.' },
+    { name: 'Pastel de Fresa', imgUrl: 'assets/img/4.jpg',price:50, description: 'Jugoso pastel de fresa.' },
+    { name: 'Pastel de Fresa', imgUrl: 'assets/img/11.jpg', price:50, description: 'Jugoso pastel de fresa.' },
+    { name: 'Pastel de Chocolate', imgUrl: 'assets/img/2.jpg', price:50, description: 'Delicioso pastel de chocolate.' },
+    { name: 'Pastel de Fresa', imgUrl: 'assets/img/5.jpg',price:50, description: 'Jugoso pastel de fresa.' },
+    { name: 'Pastel de Fresa', imgUrl: 'assets/img/6.jpg', price:50, description: 'Jugoso pastel de fresa.' },
+    
   ];
 
   constructor(private modalController: ModalController) {} // Inyecta ModalController
