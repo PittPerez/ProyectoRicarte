@@ -24,19 +24,17 @@ const routes: Routes = [
         path: 'cake-details',
         loadChildren: () => import('./cake-details/cake-details.module').then( m => m.CakeDetailsPageModule)
       },
+      {
+        path: 'contacto',
+        loadChildren: () => import('./contacto/contacto.module').then( m => m.ContactoPageModule)
+      },
+    
+      {
+        path: 'visualizar-comentarios',
+        loadChildren: () => import('./visualizar-comentarios/visualizar-comentarios.module').then( m => m.VisualizarComentariosPageModule)
+      },
     ]
   },
-  {
-    path: 'contacto',
-    loadChildren: () => import('./contacto/contacto.module').then( m => m.ContactoPageModule)
-  },
-
-  {
-    path: 'visualizar-comentarios',
-    loadChildren: () => import('./visualizar-comentarios/visualizar-comentarios.module').then( m => m.VisualizarComentariosPageModule)
-  },
-
-
 
 ];
 
