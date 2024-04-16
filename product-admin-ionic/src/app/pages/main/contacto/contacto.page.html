@@ -1,13 +1,93 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>contacto</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title>Contacto</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">contacto</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+
+  <div id="contact-info">
+    <!-- Datos de contacto -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Información de contacto</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-icon name="location-outline"></ion-icon>
+        <p>Dirección: Hacienda de las Torres</p>
+        <ion-icon name="call-outline"></ion-icon>
+        <p>Teléfono: 656 107 6643</p>
+        <p>Equipo de dulce sabor:</p>
+        <ion-chip>
+          <ion-avatar>
+            <img
+              alt="Silhouette of a person's head"
+              src="https://ionicframework.com/docs/img/demos/avatar.svg"
+            />
+          </ion-avatar>
+          <ion-label>Tanahiry Avitia</ion-label>
+        </ion-chip>
+        <ion-chip>
+          <ion-avatar>
+            <img
+              alt="Silhouette of a person's head"
+              src="https://ionicframework.com/docs/img/demos/avatar.svg"
+            />
+          </ion-avatar>
+          <ion-label>Karina Ramos</ion-label>
+        </ion-chip>
+        <ion-chip>
+          <ion-avatar>
+            <img
+              alt="Silhouette of a person's head"
+              src="https://ionicframework.com/docs/img/demos/avatar.svg"
+            />
+          </ion-avatar>
+          <ion-label>Iris Mendoza</ion-label>
+        </ion-chip>
+        <ion-chip>
+          <ion-avatar>
+            <img
+              alt="Silhouette of a person's head"
+              src="https://ionicframework.com/docs/img/demos/avatar.svg"
+            />
+          </ion-avatar>
+          <ion-label>Ana Barraza</ion-label>
+        </ion-chip><br>
+        <ion-icon name="logo-wechat" slot="start"></ion-icon><p>
+        <a href="dulcesabor@gmail.com">Envía un correo electrónico aquí</a>
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div id="comments-section">
+    <!-- Caja de comentarios -->
+    <ion-card>
+      <ion-card-header>
+        <ion-icon name="happy-outline" slot="end"></ion-icon>
+        <ion-card-title>Deja un comentario</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item lines="none">
+          <ion-label position="stacked">Nombre</ion-label>
+          <ion-input type="text" [(ngModel)]="commentName"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label position="stacked">Comentario</ion-label>
+          <ion-textarea [(ngModel)]="commentText"></ion-textarea>
+        </ion-item>
+        <ion-button expand="block" (click)="submitComment()">Enviar</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+
+
+    <!-- Botón para ver comentarios -->
+      <ion-button expand="block" (click)="verComentarios()">Ver comentarios</ion-button>
+
+  </div>
+ <!-- Mapa de ubicación -->
+  <div id="map"></div>
+ 
 </ion-content>
