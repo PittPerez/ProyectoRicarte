@@ -1,0 +1,27 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">visualizar-comentarios</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+<ion-header [translucent]="true"> 
+   <ion-toolbar color="primary">
+    <ion-title>Comentarios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <!-- Lista de comentarios -->
+  <ion-card *ngFor="let comment of comments">
+    <ion-card-header>
+      <ion-card-subtitle>{{ comment.name }}</ion-card-subtitle>
+      <ion-card-title>{{ comment.timestamp | date }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ comment.text }}</p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

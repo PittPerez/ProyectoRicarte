@@ -29,7 +29,11 @@ const routes: Routes = [
   {
     path: 'cake-details',
     loadChildren: () => import('./cake-details/cake-details.module').then( m => m.CakeDetailsPageModule)
+  },  {
+    path: 'visualizar-comentarios',
+    loadChildren: () => import('./visualizar-comentarios/visualizar-comentarios.module').then( m => m.VisualizarComentariosPageModule)
   },
+
 
 
 ];
