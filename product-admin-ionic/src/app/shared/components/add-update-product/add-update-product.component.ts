@@ -78,7 +78,7 @@ export class AddUpdateProductComponent implements OnInit {
       this.utilsSvc.dismissModal({ success: true });
 
       this.utilsSvc.presentToast({
-        message: 'Producto creado exitosamente',
+        message: 'Opinión guardada exitosamente',
         duration: 1500,
         color: 'success',
         position: 'middle',

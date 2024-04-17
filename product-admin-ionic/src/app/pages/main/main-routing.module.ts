@@ -15,25 +15,33 @@ const routes: Routes = [
       {
         path: 'profile',
         loadChildren: () => import('./profile/profile.module').then(m => m.ProfilePageModule)
-      }
+      },
+      {
+        path: 'gallery',
+        loadChildren: () => import('./gallery/gallery.module').then( m => m.GalleryPageModule)
+      },
+      {
+        path: 'cake-details',
+        loadChildren: () => import('./cake-details/cake-details.module').then( m => m.CakeDetailsPageModule)
+      },
+      {
+        path: 'contacto',
+        loadChildren: () => import('./contacto/contacto.module').then( m => m.ContactoPageModule)
+      },
+    
+      {
+        path: 'visualizar-comentarios',
+        loadChildren: () => import('./visualizar-comentarios/visualizar-comentarios.module').then( m => m.VisualizarComentariosPageModule)
+      },
+      
+      
     ]
   },
   {
-    path: 'contacto',
-    loadChildren: () => import('./contacto/contacto.module').then( m => m.ContactoPageModule)
+    path: 'carrito-compras',
+    loadChildren: () => import('./carrito-compras/carrito-compras.module').then( m => m.CarritoComprasPageModule)
   },
-  {
-    path: 'gallery',
-    loadChildren: () => import('./gallery/gallery.module').then( m => m.GalleryPageModule)
-  },
-  {
-    path: 'cake-details',
-    loadChildren: () => import('./cake-details/cake-details.module').then( m => m.CakeDetailsPageModule)
-  },  {
-    path: 'visualizar-comentarios',
-    loadChildren: () => import('./visualizar-comentarios/visualizar-comentarios.module').then( m => m.VisualizarComentariosPageModule)
-  },
-
+  
 
 
 ];

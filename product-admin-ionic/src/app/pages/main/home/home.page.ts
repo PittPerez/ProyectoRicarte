@@ -79,8 +79,8 @@ export class HomePage implements OnInit {
   //Confirmar que se quiere eliminar un producto
   async confirmDeleteProduct(product: Product) {
     this.utilsSvc.presentAlert({
-      header: 'Eliminar producto',
-      message: 'Quieres eliminar este producto?',
+      header: 'Eliminar opinión',
+      message: 'Quieres eliminar esta opinión?',
       mode: 'ios',
       buttons: [
         {
@@ -110,7 +110,7 @@ export class HomePage implements OnInit {
       this.products = this.products.filter(p =>p.id !== product.id)
 
       this.utilsSvc.presentToast({
-        message: 'Producto eliminado exitosamente',
+        message: 'Opinión eliminada exitosamente',
         duration: 1500,
         color: 'success',
         position: 'middle',
