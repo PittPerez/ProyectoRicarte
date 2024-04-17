@@ -33,8 +33,16 @@ const routes: Routes = [
         path: 'visualizar-comentarios',
         loadChildren: () => import('./visualizar-comentarios/visualizar-comentarios.module').then( m => m.VisualizarComentariosPageModule)
       },
+      
+      
     ]
   },
+  {
+    path: 'carrito-compras',
+    loadChildren: () => import('./carrito-compras/carrito-compras.module').then( m => m.CarritoComprasPageModule)
+  },
+  
+
 
 ];
 
