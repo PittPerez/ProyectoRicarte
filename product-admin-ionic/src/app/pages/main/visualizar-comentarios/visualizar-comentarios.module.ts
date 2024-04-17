@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { VisualizarComentariosPageRoutingModule } from './visualizar-comentarios-routing.module';
 
 import { VisualizarComentariosPage } from './visualizar-comentarios.page';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    VisualizarComentariosPageRoutingModule
+    VisualizarComentariosPageRoutingModule,
+    SharedModule
   ],
   declarations: [VisualizarComentariosPage]
 })
