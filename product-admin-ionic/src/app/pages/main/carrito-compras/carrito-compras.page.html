@@ -30,5 +30,12 @@
   </ion-item>
 
   <ion-button expand="block" (click)="closeCart()">Seguir Comprando</ion-button>
-  <ion-button color="secondary"expand="block" >Pagar</ion-button>
+    <!-- Agregar botón de PayPal -->
+    <ion-button expand="block" color="secondary" (click)="procesarPago()">
+      Pagar con PayPal
+      <ion-icon slot="end" name="logo-paypal"></ion-icon>
+    </ion-button>
+  
+    <!-- Elemento para renderizar el botón de PayPal -->
+    <div id="paypal-button-container"></div>
 </ion-content>
