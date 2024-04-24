@@ -1,0 +1,17 @@
+name: Release Environment Testing
+
+on:
+  workflow_dispatch: # Permite ejecutar manualmente este flujo de trabajo desde la pestaña "Actions" en GitHub.
+
+jobs:
+  test-release-environment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          # Instalar dependencias necesarias para ejecutar pruebas. Por ejemplo, si utilizas npm:
+          # npm install
