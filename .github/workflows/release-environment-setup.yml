@@ -1,0 +1,24 @@
+name: Release Environment Setup
+
+on:
+  workflow_dispatch: # Permite ejecutar manualmente este flujo de trabajo desde la pestaña "Actions" en GitHub.
+
+jobs:
+  setup-release-environment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          # Comandos para instalar las dependencias necesarias para tu aplicación.
+          # Si se usa npm:
+          # npm install
+
+      - name: Build project
+        run: |
+          # Comandos para construir el proyecto.
+          # Por ejemplo, si estás construyendo un proyecto HTML:
+          # npm run build
